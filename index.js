@@ -5,7 +5,7 @@ import { FsBlockstore } from "blockstore-fs";
 import cors from "cors";
 
 const app = express();
-const port = 5000;
+const port = ANY_PORT;
 
 const blockstore = new FsBlockstore(
   "Replace with your desired directory path"
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "Replace with your desired origin",
   })
 );
 
