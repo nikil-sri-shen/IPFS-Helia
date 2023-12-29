@@ -1,0 +1,67 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# React
+build/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# Java
+*.class
+target/
+
+# Visual Studio Code
+.vscode/
+.settings/
+
+# IntelliJ
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# JetBrains
+*.iml
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Dependency management files
+yarn.lock
+package-lock.json
+pipfile.lock
+composer.lock
+
+# Environment variables file
+.env
+
+# Ignore Jekyll files (if using Jekyll for a GitHub Pages site)
+/_site/
+.sass-cache/
+.jekyll-cache/
+
+# Editor-specific files
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+
+# Miscellaneous
+.DS_Store?
+desktop.ini
