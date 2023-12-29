@@ -2,14 +2,14 @@ import express from "express";
 import { unixfs } from "@helia/unixfs";
 import { createHelia } from "helia";
 import { FsBlockstore } from "blockstore-fs";
-import cors from "cors"; // Import the cors middleware
+import cors from "cors";
 
 const app = express();
 const port = 5000;
 
 const blockstore = new FsBlockstore(
-  "D:/FINAL YEAR PROJECT/DecWiki-BasePaper/blockstore"
-); // Replace with your desired directory path
+  "Replace with your desired directory path"
+); 
 const heliaPromise = createHelia({ blockstore });
 
 app.use(express.json());
@@ -18,7 +18,7 @@ app.use(
   cors({
     origin: "http://localhost:3000",
   })
-); // Use the cors middleware to enable CORS
+);
 
 app.post("/store", async (req, res) => {
   const { content } = req.body;
